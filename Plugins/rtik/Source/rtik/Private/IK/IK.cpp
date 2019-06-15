@@ -52,9 +52,9 @@ bool FIKBone::InitIfInvalid(const FBoneContainer& RequiredBones)
 // Initialize this IK Bone. Must be called before use.
 bool FIKBone::Init(const FBoneContainer& RequiredBones)
 {
-	FIKBoneConstraint* Constraint = GetConstraint();
+	FIKBoneConstraint* IKConstraint = GetConstraint();
 
-	if (Constraint != nullptr && !Constraint->Initialize())
+	if (IKConstraint != nullptr && !IKConstraint->Initialize())
 	{
 #if ENABLE_IK_DEBUG
 		UE_LOG(LogRTIK, Warning, TEXT("FIKBone::Init -- Constraint for bone %s failed to initialize"),
