@@ -46,7 +46,7 @@ bool FAnimNode_IKHumanoidLegTrace::IsValidToEvaluate(const USkeleton* Skeleton, 
 	{
 #if ENABLE_IK_DEBUG_VERBOSE
 		UE_LOG(LogRTIK, Warning, TEXT("IK Node Humanoid IK Leg Trace was not valid to evaluate -- a bone wrapper was null"));		
-#endif ENABLE_IK_DEBUG_VERBOSE
+#endif // ENABLE_IK_DEBUG_VERBOSE
 		return false;
 	}
 
@@ -54,7 +54,7 @@ bool FAnimNode_IKHumanoidLegTrace::IsValidToEvaluate(const USkeleton* Skeleton, 
 	{
 #if ENABLE_IK_DEBUG_VERBOSE
 		UE_LOG(LogRTIK, Warning, TEXT("IK Node Humanoid IK Leg Trace was not valid to evaluate -- Trace data was null"));		
-#endif ENABLE_IK_DEBUG_VERBOSE
+#endif // ENABLE_IK_DEBUG_VERBOSE
 		return false;
 	}
 		

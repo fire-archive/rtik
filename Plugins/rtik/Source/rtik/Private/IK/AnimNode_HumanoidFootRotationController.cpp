@@ -121,7 +121,7 @@ bool FAnimNode_HumanoidFootRotationController::IsValidToEvaluate(const USkeleton
 	{
 #if ENABLE_IK_DEBUG_VERBOSE
 		UE_LOG(LogRTIK, Warning, TEXT("Humanoid Foot Rotation Controller was not valid to evaluate -- an input wrapper object was null"));		
-#endif ENABLE_IK_DEBUG_VERBOSE
+#endif // ENABLE_IK_DEBUG_VERBOSE
 		return false;
 	}
 	

@@ -378,7 +378,7 @@ bool FAnimNode_HumanoidArmTorsoAdjust::IsValidToEvaluate(const USkeleton * Skele
 	{
 #if ENABLE_IK_DEBUG_VERBOSE
 		UE_LOG(LogRTIK, Warning, TEXT("Humaonid Arm Torso Adjust was not valid to evaluate - an input wrapper was null"));		
-#endif ENABLE_IK_DEBUG_VERBOSE
+#endif // ENABLE_IK_DEBUG_VERBOSE
 		return false;		
 	}
 
@@ -386,7 +386,7 @@ bool FAnimNode_HumanoidArmTorsoAdjust::IsValidToEvaluate(const USkeleton * Skele
 	{
 #if ENABLE_IK_DEBUG_VERBOSE
 		UE_LOG(LogRTIK, Warning, TEXT("Humaonid Arm Torso Adjust was not valid to evaluate - an arm chain was not valid"));		
-#endif ENABLE_IK_DEBUG_VERBOSE
+#endif // ENABLE_IK_DEBUG_VERBOSE
 		return false;				
 	}
 
@@ -394,7 +394,7 @@ bool FAnimNode_HumanoidArmTorsoAdjust::IsValidToEvaluate(const USkeleton * Skele
 	{
 #if ENABLE_IK_DEBUG_VERBOSE
 		UE_LOG(LogRTIK, Warning, TEXT("Humaonid Arm Torso Adjust was not valid to evaluate - Waist bone was not valid"));		
-#endif ENABLE_IK_DEBUG_VERBOSE
+#endif // ENABLE_IK_DEBUG_VERBOSE
 		return false;				
 	}
 

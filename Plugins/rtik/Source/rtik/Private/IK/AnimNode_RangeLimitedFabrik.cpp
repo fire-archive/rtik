@@ -230,7 +230,7 @@ bool FAnimNode_RangeLimitedFabrik::IsValidToEvaluate(const USkeleton* Skeleton, 
 	{
 #if ENABLE_IK_DEBUG_VERBOSE
 		UE_LOG(LogRTIK, Warning, TEXT("AnimNode_RangeLimitedFabrik was not valid to evaluate -- an input wrapper object was null"));		
-#endif ENABLE_IK_DEBUG_VERBOSE
+#endif // ENABLE_IK_DEBUG_VERBOSE
 		return false;
 	}
 

@@ -6,9 +6,9 @@ public class rtik : ModuleRules
 {
     public rtik(ReadOnlyTargetRules Target) : base(Target)
     {     
-        // PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+		//PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "AnimGraphRuntime", "AnimationCore" });
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "AnimGraphRuntime", "BlueprintGraph", "AnimationCore" });
 
         PrivateDependencyModuleNames.AddRange(new string[] {  });
 

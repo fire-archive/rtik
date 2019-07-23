@@ -3,6 +3,7 @@
 #pragma once
 
 #include "AnimGraphNode_SkeletalControlBase.h"
+#include "BoneControllers/AnimNode_SkeletalControlBase.h"
 #include "IK/AnimNode_HumanoidLegIK.h"
 #include "AnimGraphNode_HumanoidLegIK.generated.h"
 

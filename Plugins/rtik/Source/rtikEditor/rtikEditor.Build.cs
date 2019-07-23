@@ -8,8 +8,7 @@ public class rtikEditor : ModuleRules
 	{
 		// PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-
-        PublicDependencyModuleNames.AddRange(new string[] { "rtik", "Core", "CoreUObject", "Engine", "InputCore" , "UnrealEd" });
+        PublicDependencyModuleNames.AddRange(new string[] { "rtik", "Core", "CoreUObject", "Engine", "InputCore" , "AnimGraphRuntime", "BlueprintGraph", "UnrealEd" });
 
         PrivateDependencyModuleNames.AddRange(new string[] { "EditorStyle", "AnimGraph", "BlueprintGraph", "PropertyEditor", "Slate", "SlateCore" });
 

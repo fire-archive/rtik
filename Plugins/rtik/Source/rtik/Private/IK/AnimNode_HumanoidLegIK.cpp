@@ -6,6 +6,7 @@
 #include "TwoBoneIK.h"
 #include "RangeLimitedFABRIK.h"
 #include "Utility/AnimUtil.h"
+#include "Animation/AnimInstanceProxy.h"
 
 #if WITH_EDITOR
 #include "Utility/DebugDrawUtil.h"
@@ -220,7 +221,7 @@ bool FAnimNode_HumanoidLegIK::IsValidToEvaluate(const USkeleton * Skeleton, cons
 	{
 #if ENABLE_IK_DEBUG_VERBOSE
 		UE_LOG(LogRTIK, Warning, TEXT("IK Node Humanoid IK Leg was not valid to evaluate -- an input wrapper object was null"));		
-#endif ENABLE_IK_DEBUG_VERBOSE
+#endif // ENABLE_IK_DEBUG_VERBOSE
 		return false;
 	}
 	

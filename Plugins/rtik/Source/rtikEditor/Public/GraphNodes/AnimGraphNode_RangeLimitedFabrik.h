@@ -2,9 +2,10 @@
 
 #pragma once
 
+#include "AnimGraphNode_SkeletalControlBase.h"
 #include "CoreMinimal.h"
 #include "UObject/ObjectMacros.h"
-#include "AnimGraphNode_SkeletalControlBase.h"
+#include "BoneControllers/AnimNode_SkeletalControlBase.h"
 #include "IK/AnimNode_RangeLimitedFabrik.h"
 #include "AnimGraphNode_RangeLimitedFabrik.generated.h"
 
